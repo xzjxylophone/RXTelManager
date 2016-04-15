@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  RXTelManageExample
+//  RXTelManagerExample
 //
 //  Created by ceshi on 16/4/15.
 //  Copyright © 2016年 Rush. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -22,6 +23,8 @@
     self.mainNC = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = self.mainNC;
 }
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

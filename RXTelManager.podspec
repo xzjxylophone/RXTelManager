@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name     = "RXTelManager"
-  s.version  = "0.1"
+  s.version  = "0.2"
   s.license  = "MIT"
   s.summary  = "RXTelManager is a normal call tel”
   s.homepage = "https://github.com/xzjxylophone/RXTelManager"
