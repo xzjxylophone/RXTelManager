@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+// default is nil, not @""
+extern const NSString *kRXTelManager_AlertViewTitle_AttributeName;
+// default is @"拨打电话"
+extern const NSString *kRXTelManager_AlertViewOK_AttributeName;
+// default is @"取消"
+extern const NSString *kRXTelManager_AlertViewCancel_AttributeName;
+// default is 无法拨打电话:tel
+extern const NSString *kRXTelManager_ErrorMsg_AttributeName;
 
 
 
@@ -18,6 +26,7 @@
 + (void)callWithTel:(NSString *)tel errMsg:(NSString **)errMsg;
 
 
++ (void)setManagerAttributes:(NSDictionary *)attributes;
 
 
 

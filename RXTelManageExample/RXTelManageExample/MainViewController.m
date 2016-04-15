@@ -7,16 +7,26 @@
 //
 
 #import "MainViewController.h"
-
+#import "RXTelManager.h"
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+       
+        sleep(2);
+        
+        
+        [RXTelManager callWithTel:@"15901031954" errMsg:nil];
+        
+    });
     
 }
 
